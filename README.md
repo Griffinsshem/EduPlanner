@@ -159,12 +159,14 @@ npm start
 
 ## API Endpoints Overview
 
-```
-Resource	    Endpoint	    Methods	    Description
-Courses	    ```/api/courses```	    GET, POST	    List courses / Create a course
-Course Detail	/api/courses/<id>	GET	Get course details
-Tasks	/api/tasks	GET, POST	List all tasks / Create a task
-Task Detail	/api/tasks/<id>	GET, PUT, DELETE	Get / Update / Delete a task
-Study Groups	/api/studygroups	GET, POST	List / Create study groups
-Membership	/api/memberships	POST	Join a study group (with role)
-```
+| Resource      | Endpoint                | Methods             | Description                            |
+|---------------|-------------------------|----------------------|----------------------------------------|
+| Courses       | `/api/courses`          | GET, POST           | List all courses / Create a new course |
+| Course Detail | `/api/courses/<id>`     | GET                 | Retrieve a specific course             |
+| Tasks         | `/api/tasks`            | GET, POST           | List all tasks / Create a new task     |
+| Task Detail   | `/api/tasks/<id>`       | GET, PUT, DELETE    | Get / Update / Delete a specific task  |
+| Study Groups  | `/api/studygroups`      | GET, POST           | List / Create study groups             |
+| Group Detail  | `/api/studygroups/<id>` | GET                 | Retrieve a specific study group        |
+| Memberships   | `/api/memberships`      | POST                | Join a study group with a role         |
+| Users (opt.)  | `/api/users`            | GET, POST           | List / Create users (if implemented)   |
+| Login (opt.)  | `/api/login`            | POST                | Authenticate user (optional feature)   |
