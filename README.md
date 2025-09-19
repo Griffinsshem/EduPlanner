@@ -248,7 +248,7 @@ You are free to use, modify, and distribute this project for personal or commerc
 For questions, support, or collaboration inquiries:
 
 **Your Name**  
-📧 your.email@example.com  
+📧 griffinsshem254@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
 🌐 [Portfolio](https://your-portfolio.com)
 
