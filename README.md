@@ -160,8 +160,8 @@ npm start
 ## API Endpoints Overview
 
 ```
-Resource	Endpoint	Methods	Description
-Courses	/api/courses	GET, POST	List courses / Create a course
+Resource	    Endpoint	    Methods	    Description
+Courses	    ```/api/courses```	    GET, POST	    List courses / Create a course
 Course Detail	/api/courses/<id>	GET	Get course details
 Tasks	/api/tasks	GET, POST	List all tasks / Create a task
 Task Detail	/api/tasks/<id>	GET, PUT, DELETE	Get / Update / Delete a task
