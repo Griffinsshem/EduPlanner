@@ -168,3 +168,92 @@ npm start
 | Study Groups  | `/api/studygroups`      | GET, POST           | List / Create study groups             |
 | Group Detail  | `/api/studygroups/<id>` | GET                 | Retrieve a specific study group        |
 | Memberships   | `/api/memberships`      | POST                | Join a study group with a role         |
+
+## Validation
+
+All forms in the EduPlanner application use **Formik** for handling input and validation. Below are the key validation rules implemented throughout the app:
+
+### ✅ Task Form Validation
+- **Title**: Required field (min 3 characters).
+- **Due Date**: Must be a valid date format (`YYYY-MM-DD`) and cannot be in the past.
+- **Status**: Must be one of: `Pending`, `In Progress`, or `Completed`.
+- **Course**: Task must be associated with an existing course.
+
+### ✅ Study Group Form Validation
+- **Group Name**: Required field (min 3 characters).
+- **Meeting Time**: Must be a valid time string (e.g., `18:00` or `6:00 PM`).
+- **Description**: Optional, but limited to 300 characters.
+
+### ✅ Membership (Join Group) Validation
+- **Role**: Required and must be one of the following:
+  - `Leader`
+  - `Member`
+  - `Note-taker`
+- Only one membership per user per group is allowed (validated on backend).
+
+### ✅ Course Form Validation
+- **Course Name**: Required field (min 3 characters).
+- **Instructor Name**: Optional, but must be alphabetic if provided.
+
+### ✅ User Registration (Optional Feature)
+- **Email**: Must be a valid email format.
+- **Password**: Minimum 6 characters, with at least one number and one uppercase letter.
+- **Confirm Password**: Must match the password field.
+
+### 🛠 Backend Validations (Flask)
+- Backend re-validates critical fields (e.g., dates, relationships, foreign keys).
+- Duplicate study group names and duplicate user memberships are prevented.
+
+## Future Enhancements
+
+Here are some planned or potential features that could improve the EduPlanner application:
+
+- 🔐 **User Authentication**: Add user login and registration using JWT or Flask sessions.
+- 🔔 **Deadline Reminders**: Email or in-app notifications for upcoming task deadlines and group meetings.
+- 📈 **Analytics Dashboard**: Visual progress tracking using charts and graphs.
+- 💬 **Real-Time Chat**: Allow members of a study group to chat in real-time using WebSockets.
+- 📱 **Mobile Responsive Design**: Improve usability on tablets and smartphones.
+- 📤 **File Uploads**: Attach resources or notes to tasks and study groups.
+- 🌐 **Multi-language Support**: Add localization and language options.
+- 📅 **Calendar View**: Visual timeline or calendar for tasks and meetings.
+
+---
+
+## Contributing
+
+Contributions are welcome and encouraged! 🎉
+
+To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a new Pull Request.
+
+Please ensure code quality and add comments where necessary.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this project for personal or commercial purposes. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+## Contact
+
+For questions, support, or collaboration inquiries:
+
+**Your Name**  
+📧 your.email@example.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+🌐 [Portfolio](https://your-portfolio.com)
+
+---
+
+> Thank you for using EduPlanner!  
+> Happy studying and good luck with your academic journey! 🎓📚✨
+
