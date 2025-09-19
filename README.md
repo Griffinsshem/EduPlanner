@@ -168,5 +168,3 @@ npm start
 | Study Groups  | `/api/studygroups`      | GET, POST           | List / Create study groups             |
 | Group Detail  | `/api/studygroups/<id>` | GET                 | Retrieve a specific study group        |
 | Memberships   | `/api/memberships`      | POST                | Join a study group with a role         |
-| Users (opt.)  | `/api/users`            | GET, POST           | List / Create users (if implemented)   |
-| Login (opt.)  | `/api/login`            | POST                | Authenticate user (optional feature)   |
