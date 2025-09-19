@@ -113,3 +113,47 @@ eduplanner/
 1. Navigate to the backend folder:
    ```bash
    cd backend
+
+2. Create and activate a virtual environment:
+```
+python -m venv venv
+source venv/bin/activate    # Linux/macOS
+venv\Scripts\activate       # Windows
+```
+
+3. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+4. Initialize the database:
+```
+flask db init
+flask db migrate
+flask db upgrade
+```
+
+5. Run the Flask server:
+```
+flask run
+```
+
+### Frontend Setup
+
+1. Navigate to the frontend folder:
+```
+cd frontend
+```
+
+2. Install dependencies:
+```
+npm install
+```
+
+3. Start the React development server:
+```
+npm start
+```
+
+4. Open your browser at ```http://localhost:3000``` to view the app.
+
