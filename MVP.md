@@ -115,7 +115,3 @@ The following features are **not** part of the MVP and will be considered for fu
 - [x] Codebase is modular and clean.
 
 ---
-
-## 📁 Suggested File Location
-Save this document in your repository as:
-
